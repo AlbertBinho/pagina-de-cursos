@@ -1,0 +1,9 @@
+@import url(./css.css);
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: rgb(255, 255, 255);
+    --cor-quaternaria: #000000;
+    --cor-quintenaria: #F4DFC8;
+}

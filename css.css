@@ -1,4 +1,5 @@
 @import url(./colors.css);
+@import url(./reset.css);
 
  
 *{
@@ -9,7 +10,7 @@
  
 header {
     background-color: var(--cor-primaria);
-    height: 10rem;
+    height: auto;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -103,4 +104,22 @@ footer {
  
 .footer_links a:hover{
     color: var(--cor-secundaria);
+}
+
+
+@media only screen and (max-width: 768px) {
+  header{
+    flex-direction: column;
+    
+  }
+  .header_navegacao a{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+   
+  .cursos__cartao{
+    margin-bottom: 10rem;
+  }
+
+
 }

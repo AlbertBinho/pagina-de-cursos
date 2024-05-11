@@ -9,7 +9,7 @@
  
 header {
     background-color: var(--cor-primaria);
-    height: 10rem;
+    height: 5rem;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -18,8 +18,8 @@ header {
 }
  
 .logo {
-    width: 10rem;
-    height: 10rem;
+    width: 5.5rem;
+    height: 5.5rem;
 }
  
 .header_navegacao {
@@ -43,6 +43,7 @@ header {
  
 main{
     background-color: var(--cor-quaternaria);
+    
 }
  
 .banner{
@@ -68,22 +69,32 @@ h1{
 .professores__cartao {
     display: flex;
     width: 30rem;
-    height: 30rem;
+    height: auto;
     background-color: var(--cor-terciaria);
     border-radius: 18px;
     border: solid 2px var(--cor-quintenaria);
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 14px;
+    padding: 5px;
     margin-bottom: 10px;
+    font-size: 20px;
+}
+
+strong {
+    text-align: center;
+}
+
+.video_cartao {
+    width: 400px;
+    height: 400px;
 }
 
 
 
 .images_professores{
-    width: 25rem;
-    height: 25rem;
+    width: 100%;
+    height: 75%;
 }
  
 .professores__cartao:hover {
@@ -115,4 +126,27 @@ footer {
  
 .footer_links a:hover{
     color: var(--cor-secundaria);
+}
+
+@media only screen and (max-width: 768px) {
+    .professores__cartao {
+        margin-bottom: 50px;
+    }
+}
+
+@media only print {
+    header{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+    .titulo_professores{
+     padding: 1rem;
+    }
+    .professores__cartao{
+            width: 100mm; 
+            height: 120mm;  
+        }
 }

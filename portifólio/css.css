@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+
+}
+
+
+
+header {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Distribui os itens ao longo do espaço disponível */
+    background-color: black; /* Cor de fundo */
+    height: 5rem; /* Altura do cabeçalho */
+    padding: 2px; /* Espaçamento interno */
+    align-items: center; /* Alinha itens verticalmente */
+}
+
+/* Estilos para os links de navegação */
+.navegacao a {
+    font-size: 15px; /* Tamanho da fonte */
+    margin-left: 11px; /* Espaçamento à esquerda */
+    color: white; /* Cor do texto */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte */
+}
+
+
+.navegacao a:hover {
+    color: #4ADEDD; /* Cor do texto ao passar o mouse */
+    transform: scale(0.8); /* Efeito de escala ao passar o mouse */
+}
+
+.navegacao {
+    display: flex; /* Usa flexbox para layout */
+    
+    gap: 10px; /* Espaço entre os itens */
+
+    font-weight: 550; /* Peso da fonte */
+    padding: 5px; /* Espaçamento interno */
+}
+
+
+
+
+section {
+    padding: 50px ;
+   
+    
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+main{
+    background-color: black;
+    color: aliceblue;
+}
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.foto{
+    width: 25rem;
+    color: blue;
+    border-radius: 50%;  
+    align-self: center;
+    padding: 10px;
+
+
+    
+    
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #95C2C3;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
